@@ -18,7 +18,7 @@ public class World {
 	public World() {
 		this.data = new HashMap<String, Object>();
 		this.data.put("player",
-				new Player(0, new Vector4(-400, 100, 64, 128)).setWorld(this)
+				new Player(0, new Vector4(0, 0, 64, 128)).setWorld(this)
 						.setColour(new byte[] { (byte) 255, (byte) 255, (byte) 255, (byte) 255 })
 						.setTexture("textures.misc.empty"));
 
