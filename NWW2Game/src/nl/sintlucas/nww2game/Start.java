@@ -20,7 +20,7 @@ public class Start {
 
 	public static void main(String[] args) {
 		Window window = new Window();
-		window.init("Newton's Law Of Universal Gravitation 2D", new Vector(950 * 1.5, 500 * 1.5));
+		window.init("NWW2 Game", new Vector(950 * 1.5, 500 * 1.5));
 		window.create();
 
 		{
