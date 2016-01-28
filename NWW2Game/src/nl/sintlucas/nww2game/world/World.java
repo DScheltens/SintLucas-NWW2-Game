@@ -1,18 +1,26 @@
 package nl.sintlucas.nww2game.world;
 
+import java.awt.Font;
 import java.util.ArrayList;
 import java.util.ConcurrentModificationException;
 import java.util.HashMap;
 import java.util.UUID;
 
+import org.lwjgl.opengl.Display;
+import org.lwjgl.opengl.GL11;
+import org.newdawn.slick.Color;
+
 import com.trixo.engine.entity.Entity;
 import com.trixo.engine.math.Vector4;
+import com.trixo.engine.ui.Text;
 
 import nl.sintlucas.nww2game.player.Player;
 
 @SuppressWarnings("unchecked")
 public class World {
 	private HashMap<String, Object> data = null;
+
+	private Text text = new Text();
 
 	/** Constructor **/
 	public World() {
@@ -37,6 +45,11 @@ public class World {
 		for (Entity entity : this.getEntities()) {
 			entity.init(data);
 		}
+
+		text.setFontName("Arial");
+		text.setFontSize(24);
+		text.setFontStyle(Font.BOLD);
+		text.updateFont();
 	}
 
 	public void render(HashMap<String, Object> data) {
@@ -52,6 +65,19 @@ public class World {
 			if (this.getPlayer().isInFrustum(entity.getQuad())) {
 				entity.render(data);
 			}
+		}
+
+		{
+			GL11.glViewport(0, 0, Display.getWidth(), Display.getHeight());
+			GL11.glMatrixMode(GL11.GL_MODELVIEW);
+
+			GL11.glMatrixMode(GL11.GL_PROJECTION);
+			GL11.glLoadIdentity();
+			GL11.glOrtho(0, Display.getWidth(), Display.getHeight(), 0, 1, -1);
+			GL11.glMatrixMode(GL11.GL_MODELVIEW);
+
+			text.drawString(0, 0, "Haii",
+					Color.white);
 		}
 	}
 

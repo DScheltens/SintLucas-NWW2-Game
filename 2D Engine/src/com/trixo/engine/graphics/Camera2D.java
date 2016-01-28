@@ -40,6 +40,7 @@ public class Camera2D implements Camera {
         y /= scaleY;
         x += this.x;
         y += this.y;
+        
         return new Vector(x, y);
     }
 

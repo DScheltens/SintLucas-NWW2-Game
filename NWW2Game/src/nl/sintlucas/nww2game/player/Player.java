@@ -16,10 +16,10 @@ import nl.sintlucas.nww2game.physics.EntityCollisionManager;
 import nl.sintlucas.nww2game.world.World;
 
 public class Player extends Entity {
-	private HashMap<String, Object> data = null;	
+	private HashMap<String, Object> data = null;
 	private boolean jumped = false;
-	
-	private int timer = 200, lastKeyTime = 200;	
+
+	private int timer = 200, lastKeyTime = 200;
 	private int animCounter = 0;
 	private int spriteCounter = 0;
 	private int maxSprites = 7;
@@ -123,7 +123,7 @@ public class Player extends Entity {
 
 	public void onMove(int direction) {
 		if (direction == 0) {
-			this.setTexture("textures.misc.empty");			
+			this.setTexture("textures.misc.empty");
 		} else if (direction == 1) {
 			this.animCounter++;
 
