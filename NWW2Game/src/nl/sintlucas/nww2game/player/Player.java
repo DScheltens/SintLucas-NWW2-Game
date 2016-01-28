@@ -124,7 +124,6 @@ public class Player extends Entity {
 	public void onMove(int direction) {
 		if (direction == 0) {
 			this.setTexture("textures.misc.empty");			
-			this.setColour(new byte[] {(byte) 0, (byte) 0, (byte) 255, (byte) 255});
 		} else if (direction == 1) {
 			this.animCounter++;
 
@@ -136,7 +135,6 @@ public class Player extends Entity {
 				}
 
 				this.setTexture("textures.misc.empty");
-				this.setColour(new byte[] {(byte) 0, (byte) 255, (byte) 0, (byte) 255});
 			}
 		} else if (direction == -1) {
 			this.animCounter++;
@@ -149,7 +147,6 @@ public class Player extends Entity {
 				}
 
 				this.setTexture("textures.misc.empty");
-				this.setColour(new byte[] {(byte) 255, (byte) 0, (byte) 0, (byte) 255});
 			}
 		}
 	}
