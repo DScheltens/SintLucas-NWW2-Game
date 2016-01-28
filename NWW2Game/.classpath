@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+	<classpathentry kind="lib" path="C:/Users/Dylan Scheltens/Desktop/Development/Workspaces/Simulations/libs/slick/ibxm.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dylan Scheltens/Desktop/Development/Workspaces/Simulations/libs/slick/jnlp.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dylan Scheltens/Desktop/Development/Workspaces/Simulations/libs/slick/jogg-0.0.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dylan Scheltens/Desktop/Development/Workspaces/Simulations/libs/slick/jorbis-0.0.15.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dylan Scheltens/Desktop/Development/Workspaces/Simulations/libs/slick/slick.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dylan Scheltens/Desktop/Development/Workspaces/Simulations/libs/slick/slick-examples.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dylan Scheltens/Desktop/Development/Workspaces/Simulations/libs/slick/tinylinepp.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dylan Scheltens/Desktop/Development/Workspaces/Simulations/libs/commons-lang3-3.3.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dylan Scheltens/Desktop/Development/Workspaces/Simulations/libs/jsoup-1.8.1.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dylan Scheltens/Desktop/Development/Workspaces/Simulations/libs/SoundSystem.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dylan Scheltens/Desktop/Development/Workspaces/Simulations/libs/soundLibs/CodecJOgg.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dylan Scheltens/Desktop/Development/Workspaces/Simulations/libs/soundLibs/CodecWav.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dylan Scheltens/Desktop/Development/Workspaces/Simulations/libs/soundLibs/LibraryJavaSound.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dylan Scheltens/Desktop/Development/Workspaces/Simulations/libs/soundLibs/LibraryLWJGLOpenAL.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dylan Scheltens/Desktop/Development/Workspaces/Simulations/libs/lwjgl/AppleJavaExtensions.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dylan Scheltens/Desktop/Development/Workspaces/Simulations/libs/lwjgl/asm-debug-all.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dylan Scheltens/Desktop/Development/Workspaces/Simulations/libs/lwjgl/jinput.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dylan Scheltens/Desktop/Development/Workspaces/Simulations/libs/lwjgl/lwjgl.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dylan Scheltens/Desktop/Development/Workspaces/Simulations/libs/lwjgl/lwjgl_test.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dylan Scheltens/Desktop/Development/Workspaces/Simulations/libs/lwjgl/lwjgl_util.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dylan Scheltens/Desktop/Development/Workspaces/Simulations/libs/lwjgl/lwjgl_util_applet.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dylan Scheltens/Desktop/Development/Workspaces/Simulations/libs/lwjgl/lwjgl-debug.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dylan Scheltens/Desktop/Development/Workspaces/Simulations/libs/lwjgl/lzma.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dylan Scheltens/Desktop/Development/Workspaces/Simulations/libs/lwjgl/natives-linux.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dylan Scheltens/Desktop/Development/Workspaces/Simulations/libs/lwjgl/natives-mac.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Dylan Scheltens/Desktop/Development/Workspaces/Simulations/libs/lwjgl/natives-windows.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/2D Engine"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
