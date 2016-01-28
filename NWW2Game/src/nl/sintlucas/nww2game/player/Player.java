@@ -16,9 +16,14 @@ import nl.sintlucas.nww2game.physics.EntityCollisionManager;
 import nl.sintlucas.nww2game.world.World;
 
 public class Player extends Entity {
-	private HashMap<String, Object> data = null;
-	private int timer = 200, lastKeyTime = 200;
+	private HashMap<String, Object> data = null;	
 	private boolean jumped = false;
+	
+	private int timer = 200, lastKeyTime = 200;	
+	private int animCounter = 0;
+	private int spriteCounter = 0;
+	private int maxSprites = 7;
+	private int lastDirection = 0, direction = 0;
 
 	/** Constructor **/
 	public Player(int entityID, Vector4 aabb) {
@@ -116,14 +121,10 @@ public class Player extends Entity {
 
 	}
 
-	private int animCounter = 0;
-	private int spriteCounter = 0;
-	private int maxSprites = 7;
-	private int lastDirection = 0, direction = 0;;
-
 	public void onMove(int direction) {
 		if (direction == 0) {
-			this.setTexture("textures.misc.empty");
+			this.setTexture("textures.misc.empty");			
+			this.setColour(new byte[] {(byte) 0, (byte) 0, (byte) 255, (byte) 255});
 		} else if (direction == 1) {
 			this.animCounter++;
 
@@ -135,6 +136,7 @@ public class Player extends Entity {
 				}
 
 				this.setTexture("textures.misc.empty");
+				this.setColour(new byte[] {(byte) 0, (byte) 255, (byte) 0, (byte) 255});
 			}
 		} else if (direction == -1) {
 			this.animCounter++;
@@ -147,6 +149,7 @@ public class Player extends Entity {
 				}
 
 				this.setTexture("textures.misc.empty");
+				this.setColour(new byte[] {(byte) 255, (byte) 0, (byte) 0, (byte) 255});
 			}
 		}
 	}
